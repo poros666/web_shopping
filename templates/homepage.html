@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="../static/css/homepage.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/floating-parts.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/toastr.min.css"/>
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/toastr.min.js"></script>
+    <script src="../static/js/homepage.js"></script>
+</head>
+<body>
+<!-- menu -->
+<div class="menu shopping-car">
+    <div class="bg-layer"></div>
+    <a class="icon-layer l-cart" href="shoppingcar.html" target="_blank" title="购物车">
+        <img src="../static/images/gouwuche-white.png" alt="this is shop car">
+    </a>
+</div>
+<div class="menu contact-us">
+    <div class="bg-layer"></div>
+    <a class="icon-layer l-contact" href="#" target="_blank" title="联系我们">
+        <img src="../static/images/lianxiwomen-w.png" alt="this is shop car">
+    </a>
+</div>
+
+<!-- web-layout -->
+<header class="header">
+    <h2 class="logo">CYBERPUNK-SHOP</h2>
+    <h2 class="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户:{{ current_user.nickname }}</h2>
+    <nav class="common-nav">
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/shoppingcar">购物车</a></li>
+            <li><a href="/orderhis">历史订单</a></li>
+            <li><a href="/logout">退出登录</a></li>
+
+        </ul>
+    </nav>
+    <div class="fluorescence fluorescence-filter"></div>
+    <div class="fluorescence fluorescence-border"></div>
+</header>
+
+<div class="banner">
+    <div class="banner-text">
+        <h2>汇集全球最佳的赛博厂商，您要的都在这里</h2>
+        <h4>check all fantastic products below.</h4>
+    </div>
+</div>
+<h3>GUNS.</h3>
+<div class="products">
+    <ul class="product-wrapper">
+        <li class="products prod1">
+            <div class="prod-info">
+                <br>
+                <br>
+                <h4></h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Errem nonumy #$1299</h2>
+                <h4>
+                    Errem nonumy no sit, eam doctus torquatos reformidans te,
+                    lorem sensibus consulatu id vim. Sumo altera dissentiet duo ex.
+                    Ei verterem principes mea, nisl copiosae te sed. Usu mazim ullamcorper te.
+                    Qui id ferri mandamus. Has appetere quaerendum te, an has zril persius legendos,
+                    zril feugait est at.
+                </h4>
+
+                <button onclick="chose_prodc(1)">buy</button>
+            </div>
+        </li>
+        <li class="products prod2">
+            <div class="prod-info">
+                <h4></h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>recteque salutatus #$699</h2>
+                <h4>
+                    Ea nam recteque salutatus, pri postea dicunt definiebas eu.
+                    Veri habemus tractatos cum cu. Numquam consequuntur et vis,
+                    ei deserunt quaestio nam. Ex eripuit civibus dolores sea.
+                    Vix ea habeo possim voluptatibus. Ex est adolescens referrentur.
+                </h4>
+                <button onclick="chose_prodc(2)">buy</button>
+            </div>
+        </li>
+        <li class="products prod3">
+            <div class="prod-info">
+                <h4></h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>timeam appetere #$899</h2>
+                <h4>
+                    An usu timeam appetere, per solet iuvaret docendi et,
+                    incorrupte efficiendi usu no. Et eos inani detraxit referrentur.
+                    Ut possit torquatos vix, ne animal necessitatibus eos. Et alia duis epicuri mea,
+                    ad eros vero recteque mei.</h4>
+                <button onclick="chose_prodc(3)">buy</button>
+            </div>
+        </li>
+        <li class="products prod4">
+            <div class="prod-info">
+                <h4></h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Errem nonumy #$1299</h2>
+                <h4>
+                    Lorem ipsum dolor sit amet, affert vocent scripta eu mea.
+                    Has dictas platonem suscipiantur te. Cibo laudem tritani cu sit,
+                    ad tation signiferumque nec. Qui no simul zril homero. Libris urbanitas disputando id eos,
+                    ornatus dolorem vocibus at has. Eu simul dissentiunt nam, ius iriure civibus an,
+                    ius affert singulis posidonium eu.
+                </h4>
+                <button onclick="chose_prodc(4)">buy</button>
+            </div>
+        </li>
+        <li class="products prod5">
+            <div class="prod-info">
+                <h4></h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Et quo minim #$1299</h2>
+                <h4>
+                    Et quo minim soleat debitis, ea copiosae perpetua concludaturque per.
+                    Pro facilisis corrumpit abhorreant in, utinam everti eum id. At quo putant melius,
+                    unum probo ne usu. Qui ornatus percipit et, cum odio consul in.
+                    Quo ne dicam eruditi pericula. Adhuc virtute vim ea, vix ea tamquam alterum epicurei.
+                </h4>
+                <button onclick="chose_prodc(5)">buy</button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<footer class="site-footer-style">
+    <div class="SiteFooterStyles_copyright">
+        <P>
+            本网站由同济大学软件学院徐炳昌1850953制作
+            <br>
+
+        </P>
+        <p>
+            ©CYBER-SHOP 2020, powered by MEMEMEMEME THX.
+            <br>
+            本站转载的图片等各类内容版权归作者及来源网站所有，本站原创内容转载请注明来源
+            <br>
+            灵感来源、图片借用均来自CD PROJECT RED™以及其旗下的CYBERPUNK2077™
+            <br>
+            商业媒体及纸媒请先联系：1850953@tongji.edu.cn
+        </p>
+    </div>
+</footer>
+</body>
+</html>

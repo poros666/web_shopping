@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.font.im/css?family=Press+Start+2P');
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* font-family: 'Press Start 2P'; */
+}
+
+.digit-p {
+    font-family: 'Press Start 2P';
+}
+
+footer {
+    display: block;
+}
+
+.SiteFooterStyles_copyright {
+    position: relative;
+    right: 20px;
+    top: 50px;
+    bottom: 0;
+    text-align: right;
+    font-size: .8rem;
+    color: #9b9dad;
+}
+
+.SiteFooterStyles_copyright {
+    float: right;
+}
+
+/* -----------------------start----------------------button */
+button {
+    border: none;
+    background: transparent;
+    position: relative;
+    outline: none;
+    padding: 10px 30px;
+    margin: 0 15px;
+    color: #21ebff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #21ebff;
+    color: #111;
+    box-shadow: 0 0 50px #21ebff;
+    transition-delay: 0.6s;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition: 0.5s;
+}
+
+button:hover:before {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 2px solid #21ebff;
+    transition: 0.5s;
+}
+
+button:hover:after {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+/* -------------------------end----------------------button */
+
+/* ----------------------start-----------------------连接 */
+a:link {
+    color: #21ebff
+}
+
+a:hover {
+    color: #00eaff;
+}
+
+a:active {
+    color: red;;
+}
+
+/* -----------------------end------------------------连接 */
+
+.fluorescence {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(235deg, #00bcd4, #060c21, #89ff00);
+}
+
+.fluorescence-filter {
+    z-index: -1;
+}
+
+.fluorescence-border {
+    z-index: -2;
+    filter: blur(40px);
+    -webkit-animation-name: breath;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+/* ---------------begin---------------------header */
+.header {
+    background: #1e1f26;
+    height: 70px;
+    width: 100%;
+    padding: 0 30px;
+    position: relative;
+}
+
+.logo {
+    line-height: 70px;
+    float: left;
+}
+
+.common-nav {
+    width: 30%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    float: right;
+}
+
+.common-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.common-nav ul li a {
+    color: #999;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 2px;
+    font-size: 17x;
+}
+
+.common-nav ul li a:hover {
+    color: #fff;
+    border-bottom: 3px solid #21ebff;
+}
+
+/* --------------end------------------------header */
+
+
+/*利用不透明度变化实现呼吸灯*/
+@keyframes breath {
+    from {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 3;
+    }
+    to {
+        opacity: 0.1;
+    }
+}
+
+@keyframes broken-neon1 {
+    0%, 30%, 71%, 73%, 75%, 77% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    70%, 72%, 74%, 76%, 78%, 100% {
+        text-shadow: -3px 0px 5px #222, 0px 0px 2px #222;
+    }
+
+}
+
+@keyframes box-neon-21ebff {
+    0% {
+        text-shadow: -3px 0px 5px #222, 0px 0px 2px #222;
+    }
+    50% {
+        box-shadow: 0 0 10px #fff, 0 0 20px #21ebff, 0 0 30px #21ebff, 0 0 40px #21ebff;
+    }
+    100% {
+        text-shadow: -3px 0px 5px #222, 0px 0px 2px #222;
+    }
+}
+
+@keyframes border-neon-21ebff {
+    0% {
+        text-shadow: -3px 0px 5px #222, 0px 0px 2px #222;
+    }
+    50% {
+        box-shadow: 0 0 10px #21ebff, 0 0 20px #21ebff;
+    }
+    100% {
+        text-shadow: -3px 0px 5px #222, 0px 0px 2px #222;
+    }
+}

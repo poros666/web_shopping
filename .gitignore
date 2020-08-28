@@ -1,0 +1,7 @@
+*.pyc
+.vscode
+*.json
+env/
+*.pkl
+__pycache__
+upload/*

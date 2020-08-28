@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>SHOPPINGCART</title>
+    <link rel="stylesheet" href="../static/css/shoppingcart.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/floating-parts.css">
+    <link href="https://fonts.font.im/css?family=Press+Start+2P" rel="stylesheet">
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/toastr.min.css"/>
+    <script src="/static/js/toastr.min.js"></script>
+    <script src="../static/js/shoppingcart.js"></script>
+</head>
+
+<body>
+<!-- menu -->
+<div class="menu shopping-car">
+    <div class="bg-layer"></div>
+    <a class="icon-layer l-cart" href="#" target="_blank" title="购物车">
+        <img src="../static/images/gouwuche-white.png" alt="this is shop car">
+    </a>
+</div>
+<div class="menu contact-us">
+    <div class="bg-layer"></div>
+    <a class="icon-layer l-contact" href="#" target="_blank" title="联系我们">
+        <img src="../static/images/lianxiwomen-w.png" alt="this is shop car">
+    </a>
+</div>
+<!-- web-layout -->
+<header class="header">
+    <h2 class="logo">CYBERPUNK-SHOP</h2>
+    <h2 class="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户:{{ current_user.nickname }}</h2>
+    <nav class="common-nav">
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/shoppingcar">购物车</a></li>
+            <li><a href="/orderhis">历史订单</a></li>
+            <li><a href="/logout">退出登录</a></li>
+        </ul>
+    </nav>
+    <div class="fluorescence fluorescence-filter"></div>
+    <div class="fluorescence fluorescence-border"></div>
+</header>
+
+<div class="banner">
+    <div class="banner-text">
+        <h2>您的购物车</h2>
+        <h4>我们将呈上您挑选的商品，一并随附价格</h4>
+    </div>
+</div>
+<div class="cart-wrapper">
+    <div class="cart-title">
+        <span>name</span>
+        <span>counts</span>
+        <span>value</span>
+    </div>
+    <div class="cart-row">
+        <span>PROD1</span>
+        <span><h4>{{ current_user.cart[0]["p1"] }}</h4></span>
+        <span>10</span>
+        <button onclick="delete_prodc(1)">删除</button>
+    </div>
+    <div class="cart-row">
+        <span>PROD2</span>
+        <span><h4>{{ current_user.cart[0]["p2"] }}</h4></span>
+        <span>20</span>
+        <button onclick="delete_prodc(2)">删除</button>
+    </div>
+    <div class="cart-row">
+        <span>PROD3</span>
+        <span><h4>{{ current_user.cart[0]["p3"] }}</h4></span>
+        <span>30</span>
+        <button onclick="delete_prodc(3)">删除</button>
+    </div>
+    <div class="cart-row">
+        <span>PROD4</span>
+        <span><h4>{{ current_user.cart[0]["p4"] }}</h4></span>
+        <span>40</span>
+        <button onclick="delete_prodc(4)">删除</button>
+    </div>
+    <div class="cart-row">
+        <span>PROD5</span>
+        <span><h4>{{ current_user.cart[0]["p5"] }}</h4></span>
+        <span>50</span>
+        <button onclick="delete_prodc(5)">删除</button>
+    </div>
+    <span id="button-span">
+            <button onclick="create_his(8999)">生成订单</button>
+        </span>
+</div>
+
+<footer class="site-footer-style">
+    <div class="SiteFooterStyles_copyright">
+        <P>
+            本网站由同济大学软件学院徐炳昌1850953制作
+            <br>
+
+        </P>
+        <p>
+            ©CYBER-SHOP 2020, powered by MEMEMEMEME THX.
+            <br>
+            本站转载的图片等各类内容版权归作者及来源网站所有，本站原创内容转载请注明来源
+            <br>
+            灵感来源、图片借用均来自CD PROJECT RED™以及其旗下的CYBERPUNK2077™
+            <br>
+            商业媒体及纸媒请先联系：1850953@tongji.edu.cn
+        </p>
+    </div>
+</footer>
+</body>
+</html>

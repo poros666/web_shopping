@@ -1,0 +1,188 @@
+
+body {
+    background-color: #131417;
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+.login-main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.login-title {
+    font-size: 20px;
+}
+
+.slogan {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.login-container {
+    width: 350px;
+    height: 600px;
+    margin: 50px auto;
+    margin-top: 100px;
+    background-color: #1e1f26;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid; */
+    position: relative;
+}
+
+.login-container .logo {
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+#log-message {
+    font-size: 1px;
+
+}
+
+.login-container .form-wrapper {
+    height: 300px;
+    width: 350px;
+}
+
+/* ---------------------------------------------input filed------ */
+.input-field {
+    position: relative;
+    height: 40px;
+    width: 70%;
+    margin-left: 53px;
+}
+
+.input-field label {
+    position: absolute;
+}
+
+.input-field input[type="text"] {
+    position: relative;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: none;
+    font-size: 16px;
+    color: turquoise;
+    width: 100%;
+}
+
+.input-field input[type="password"] {
+    position: relative;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: none;
+    font-size: 16px;
+    color: turquoise;
+    width: 100%;
+}
+
+.input-field label {
+    position: absolute;
+}
+
+.input-field span {
+    background-color: teal;
+}
+
+.input-field:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition: 0.5s;
+}
+
+.input-field:hover:before {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+.input-field:visited:before {
+    width: 100%;
+}
+
+/* -----------------------------------------------input  up---- */
+
+.login-style-button {
+    height: 60px;
+}
+
+
+.register-form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr 1fr;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+}
+
+.login-form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr 1fr;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+}
+
+.login-container .title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#neon-slogan {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 7em;
+    color: #fff;
+    font-family: Monoton;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+}
+
+#broken-neon-slogan {
+    text-decoration: none;
+    font-size: 7em;
+    color: #fff;
+    font-family: Monoton;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-animation: broken-neon1 10s infinite;
+    -moz-animation: broken-neon1 10s infinite;
+    animation: broken-neon1 10s infinite
+}
+
+
+video {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    /*加滤镜*/
+    /*filter: blur(15px); //背景模糊设置 */
+    /*-webkit-filter: grayscale(100%);*/
+    filter: grayscale(50%);
+    z-index: -11
+}  
+

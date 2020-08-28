@@ -1,0 +1,179 @@
+.pop-up-windows {
+    display: none;
+}
+
+body {
+    color: #fff;
+    background: #131417;
+    height: max-content;
+    text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* ---------------begin---------------------web-layout */
+
+.web-layout {
+    /* height: 100%;
+    width: 100%; */
+    /* display: grid;
+    grid-row: 1fr 2fr 10fr 1fr; */
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ---------------begin---------------------banner */
+.banner {
+    line-height: 350px;
+    font-size: 30px;
+}
+
+.banner h4 {
+    line-height: 100px;
+}
+
+/* --------------end------------------------banner */
+
+
+/* ---------------begin---------------------products */
+.products {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-wrapper {
+    margin-top: 60px;
+}
+
+.product-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    width: 90%;
+    border-top: 8px solid #21ebff;
+    border-radius: 4px;
+    transition: 0.5s;
+    animation: border-neon-21ebff 5s infinite ease-in-out;
+}
+
+.products ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-left: 40px;
+}
+
+.products li {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex: 0 0 500px;
+    flex-direction: column;
+    margin: 20px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: #1f8bd3;
+    transition: 0.3s;
+    /* background: #1e1f26; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.products li img {
+    top: 0;
+    width: 500px;
+    height: 250px;
+
+}
+
+.products li button {
+    position: absolute;
+    width: 40%;
+    height: 50px;
+    right: 20px;
+    bottom: 40px;
+}
+
+.products li:hover .prod-info {
+    height: 400px;
+    background-color: rgba(13, 14, 17, 0.96);
+}
+
+.products .prod-info {
+    width: 500px;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+.products .prod-info::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 100px;
+    right: 200px;
+    border-top: 8px solid rgb(177, 171, 171);
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.products li:hover .prod-info::before {
+    border-color: #21ebff;
+    animation: box-neon-21ebff 5s infinite ease-in-out;
+}
+
+.products .prod1 {
+    background-image: url(../images/goods/gun1.jpg);
+}
+
+.products .prod2 {
+    background-image: url(../images/goods/gun2.jpg);
+}
+
+.products .prod3 {
+    background-image: url(../images/goods/eqi1.jpg);
+}
+
+.products .prod4 {
+    background-image: url(../images/goods/gun3.jpg);
+}
+
+.products .prod5 {
+    background-image: url(../images/goods/gun4.jpg);
+}
+
+/* --------------end------------------------products */
+
+
+/* ---------------begin---------------------footer */
+.footer {
+    bottom: 0;
+}
+
+.footer h2 {
+    bottom: 0;
+}
+
+/* --------------end------------------------footer */
+
+
+/* -----------------------------------------web-layout */
+/* -----------------------------------------web-layout */
+/* --------------end------------------------web-layout */
+
+/* ---------------begin---------------------header */
+/* --------------end------------------------header */

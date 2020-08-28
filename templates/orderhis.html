@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>SHOPPINGCART</title>
+    <link rel="stylesheet" href="../static/css/shoppingcart.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/floating-parts.css">
+    <link href="https://fonts.font.im/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+<!-- menu -->
+<div class="menu shopping-car">
+    <div class="bg-layer"></div>
+    <a class="icon-layer l-cart" href="#" target="_blank" title="购物车">
+        <img src="../static/images/gouwuche-white.png" alt="this is shop car">
+    </a>
+</div>
+<div class="menu contact-us">
+    <div class="bg-layer"></div>
+    <a class="icon-layer l-contact" href="#" target="_blank" title="联系我们">
+        <img src="../static/images/lianxiwomen-w.png" alt="this is shop car">
+    </a>
+</div>
+<!-- web-layout -->
+<header class="header">
+    <h2 class="logo">CYBERPUNK-SHOP</h2>
+    <nav class="common-nav">
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/shoppingcar">购物车</a></li>
+            <li><a href="/orderhis">历史订单</a></li>
+            <li><a href="/logout">退出登录</a></li>
+        </ul>
+    </nav>
+    <div class="fluorescence fluorescence-filter"></div>
+    <div class="fluorescence fluorescence-border"></div>
+</header>
+
+<div class="banner">
+    <div class="banner-text">
+        <h2>您的历史订单</h2>
+        <h4>下面是您的历史订单及其对应的价格:</h4>
+    </div>
+</div>
+<div class="cart-wrapper">
+    <div class="cart-title">
+        <span>order_time</span>
+        <span>total_value</span>
+    </div>
+    {% for item in current_user.his %}
+        <div class="cart-row">
+            <span><h4>{{ item.order_time }}</h4></span>
+            <span><h4>{{ item.total }}</h4></span>
+        </div>
+    {% endfor %}
+</div>
+<footer class="site-footer-style">
+    <div class="SiteFooterStyles_copyright">
+        <P>
+            本网站由同济大学软件学院徐炳昌1850953制作
+            <br>
+
+        </P>
+        <p>
+            ©CYBER-SHOP 2020, powered by MEMEMEMEME THX.
+            <br>
+            本站转载的图片等各类内容版权归作者及来源网站所有，本站原创内容转载请注明来源
+            <br>
+            灵感来源、图片借用均来自CD PROJECT RED™以及其旗下的CYBERPUNK2077™
+            <br>
+            商业媒体及纸媒请先联系：1850953@tongji.edu.cn
+        </p>
+    </div>
+</footer>
+</body>
+</html>
